@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     float horizontal;
     float vertical;
     int currentHealth;
+    int currentCoins;
 
     public float speed = 3.0f;
     public int maxHealth = 100;
@@ -17,13 +18,13 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        currentCoins = 0;
     }
 
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
-
     }
 
     void FixedUpdate()
@@ -42,5 +43,15 @@ public class PlayerController : MonoBehaviour
     public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
+    }
+
+    public int coins()
+    {
+        return currentCoins;
+    }
+
+    public void changeCoins(int amount)
+    {
+        currentCoins += amount;
     }
 }
