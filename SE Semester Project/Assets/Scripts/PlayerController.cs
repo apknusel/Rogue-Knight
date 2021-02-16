@@ -8,17 +8,17 @@ public class PlayerController : MonoBehaviour
     float horizontal;
     float vertical;
     int currentHealth;
-    int currentCoins;
 
     public float speed = 3.0f;
     public int maxHealth = 100;
+
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
-        currentCoins = 0;
     }
 
     void Update()
@@ -45,13 +45,11 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
     }
 
-    public int coins()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        return currentCoins;
-    }
-
-    public void changeCoins(int amount)
-    {
-        currentCoins += amount;
+        if (other.gameObject.CompareTag("Coins"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -4,25 +4,13 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    Rigidbody2D rb;
-    public int value;
+    public int coinValue = 1;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        value = 1;
-    }
-
-    void FixedUpdate()
-    {
-        Vector2 position = rb.position;
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        foreach (ContactPoint contact in collision.contacts)
+        if (other.gameObject.CompareTag("Player"))
         {
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
+            CoinManager.instance.ChangeScore(coinValue);
         }
     }
 }
