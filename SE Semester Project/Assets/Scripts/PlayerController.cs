@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
+        currentHealth = 10;
         animator = GetComponent<Animator>();
     }
 
@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude);
+        //animator.SetFloat("Speed", move.magnitude);
+        
     }
 
     void FixedUpdate()
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
         rb.MovePosition(position);
+        Debug.Log(currentHealth);
     }
 
     public int health()
@@ -62,6 +64,10 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Coins"))
+        {
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("Hearts"))
         {
             Destroy(other.gameObject);
         }
