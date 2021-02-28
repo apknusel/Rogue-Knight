@@ -290,6 +290,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1042835153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1318255953144265888, guid: 6ff8f13e7f27b2448b4d3aff22505f56,
+    type: 3}
+  m_PrefabInstance: {fileID: 1318255953158463053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1117095463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5716,10 +5722,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1318255953144265891, guid: 6ff8f13e7f27b2448b4d3aff22505f56,
+        type: 3}
+      propertyPath: homePos
+      value: 
+      objectReference: {fileID: 1042835153}
+    - target: {fileID: 1318255953144265891, guid: 6ff8f13e7f27b2448b4d3aff22505f56,
+        type: 3}
+      propertyPath: maxRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318255953144265891, guid: 6ff8f13e7f27b2448b4d3aff22505f56,
+        type: 3}
+      propertyPath: minRange
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1318255953144265894, guid: 6ff8f13e7f27b2448b4d3aff22505f56,
         type: 3}
       propertyPath: m_Name
       value: Green Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3397848371442338376, guid: 6ff8f13e7f27b2448b4d3aff22505f56,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff8f13e7f27b2448b4d3aff22505f56, type: 3}

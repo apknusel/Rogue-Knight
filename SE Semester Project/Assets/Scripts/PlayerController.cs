@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Look X", movement.x);
         animator.SetFloat("Look Y", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        
     }
 
     void FixedUpdate()
@@ -46,6 +45,7 @@ public class PlayerController : MonoBehaviour
     public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
+        Debug.Log(currentHealth);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -57,6 +57,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Hearts"))
         {
             Destroy(other.gameObject);
+        }
+    }
+
+    private void OnControllerColliderHit(Collision collision)
+    {
+        if (collision.collider.gameObject.CompareTag("Monster"))
+        {
+            Debug.Log("Damaged!");
+            changeHealth(-5);
+            HealthManager.ChangeHealth(-5);
         }
     }
 }
