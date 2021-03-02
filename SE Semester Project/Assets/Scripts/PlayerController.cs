@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
     public Text text;
     public int maxHealth = 200;
+    public int damage;
 
     public float speed = 3.0f;
 
@@ -63,6 +64,11 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             changeHealth(10);
         }
+    }
+
+    public int getDamage()
+    {
+        return damage;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5532513447314283796}
-  - component: {fileID: 5532513447314283797}
+  - component: {fileID: -671496956929254692}
   m_Layer: 9
   m_Name: CameraConfiner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &5532513447314283797
+--- !u!60 &-671496956929254692
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,11 +56,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -11.590102, y: 9.7734585}
-      - {x: -11.527656, y: -4.1938562}
-      - {x: 16.215256, y: -4.1640844}
-      - {x: 16.365479, y: -4.1290236}
-      - {x: 16.217133, y: -4.1637106}
-      - {x: 16.369703, y: -4.164276}
-      - {x: 16.369663, y: -1.8710666}
-      - {x: 16.36946, y: 9.750884}
+    - - {x: 0, y: 1}
+      - {x: -0.95105654, y: 0.30901697}
+      - {x: -0.5877852, y: -0.80901706}
+      - {x: 0.58778536, y: -0.80901694}
+      - {x: 0.9510565, y: 0.30901712}

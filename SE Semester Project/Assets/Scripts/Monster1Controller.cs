@@ -10,12 +10,16 @@ public class Monster1Controller : MonoBehaviour
     public float speed;
     public float maxRange;
     public float minRange;
-
+    public int currentHealth;
+    public int maxHealth;
+    public GameObject coin;
+    
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         myAnim = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -29,6 +33,11 @@ public class Monster1Controller : MonoBehaviour
         {
             GoHome();
         }
+        if (currentHealth <= 0)
+        {
+            Instantiate(coin,transform.position,transform.rotation);
+            Object.Destroy(this.gameObject);
+        }
     }
 
     public void FollowPlayer()
@@ -39,6 +48,11 @@ public class Monster1Controller : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
+    public void changeHealth(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
+    }
+
     public void GoHome()
     {
         myAnim.SetFloat("moveX", (homePos.position.x - transform.position.x));
@@ -47,6 +61,14 @@ public class Monster1Controller : MonoBehaviour
         if (Vector3.Distance(transform.position, homePos.position) == 0)
         {
             myAnim.SetBool("isMoving", false);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            changeHealth(collision.gameObject.GetComponent<PlayerController>().getDamage());
         }
     }
 }
