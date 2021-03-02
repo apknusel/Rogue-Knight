@@ -36,7 +36,7 @@ public class Monster1Controller : MonoBehaviour
         myAnim.SetBool("isMoving", true);
         myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
         myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed = Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
     public void GoHome()

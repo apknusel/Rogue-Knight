@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1318255953144265888}
   - component: {fileID: 1318255953144265889}
   - component: {fileID: 1318255953144265890}
-  - component: {fileID: 1318255953144265891}
   - component: {fileID: 3397848371442338376}
   m_Layer: 0
   m_Name: Green Monster
@@ -104,22 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1318255953144265891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318255953144265894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f16bcfd094b1c5a44bd05759d4baf0ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  homePos: {fileID: 0}
-  speed: 1
-  maxRange: 0
-  minRange: 0
 --- !u!61 &3397848371442338376
 BoxCollider2D:
   m_ObjectHideFlags: 0

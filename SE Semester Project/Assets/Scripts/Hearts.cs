@@ -11,8 +11,7 @@ public class Hearts : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.GetComponent<PlayerController>().changeHealth(amount);
-            HealthManager.instance.ChangeHealth(amount);
+            //player.GetComponent<PlayerController>().changeHealth(amount);
         }
     }
 }

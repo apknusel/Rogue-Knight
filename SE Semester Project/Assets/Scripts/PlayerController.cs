@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
-    int currentHealth;
+
+    public int currentHealth;
+    public Text text;
+    public int maxHealth = 200;
 
     public float speed = 3.0f;
-    public int maxHealth = 100;
 
     public Animator animator;
 
@@ -18,7 +21,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentHealth = 10;
+        currentHealth = 100;
+        text.text = "" + currentHealth.ToString();
         animator = GetComponent<Animator>();
     }
 
@@ -45,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
-        Debug.Log(currentHealth);
+        text.text = "" + currentHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -57,16 +61,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Hearts"))
         {
             Destroy(other.gameObject);
+            changeHealth(10);
         }
     }
 
-    private void OnControllerColliderHit(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.CompareTag("Monster"))
+        if (collision.gameObject.CompareTag("Monster"))
         {
             Debug.Log("Damaged!");
             changeHealth(-5);
-            HealthManager.ChangeHealth(-5);
         }
     }
 }
