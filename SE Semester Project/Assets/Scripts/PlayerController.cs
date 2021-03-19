@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     public int currentHealth;
-    public Text text;
+    //public Text text;
     public int maxHealth = 200;
     public int damage;
 
@@ -18,12 +18,11 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentHealth = 100;
-        text.text = "" + currentHealth.ToString();
+        //text.text = "" + currentHealth.ToString();
         animator = GetComponent<Animator>();
     }
 
@@ -39,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.velocity= new Vector2(movement.x*speed,movement.y*speed);
     }
 
     public int health()
@@ -50,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
-        text.text = "" + currentHealth;
+        //text.text = "" + currentHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

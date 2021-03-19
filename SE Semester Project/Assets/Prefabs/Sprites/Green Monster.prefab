@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePos: {fileID: 0}
-  speed: 0.5
-  maxRange: 5
+  speed: 3
+  maxRange: 20
   minRange: 0
   currentHealth: 15
   maxHealth: 15
