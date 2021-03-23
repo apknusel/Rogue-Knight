@@ -117,13 +117,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16bcfd094b1c5a44bd05759d4baf0ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  homePos: {fileID: 0}
   speed: 3
   maxRange: 20
   minRange: 0
-  currentHealth: 15
-  maxHealth: 15
+  currentHealth: 60
+  maxHealth: 60
   coin: {fileID: 2406998225864962747, guid: 29e38a06863da3048aeec9d859fa5fa7, type: 3}
+  Damage: 10
 --- !u!61 &3397848371442338376
 BoxCollider2D:
   m_ObjectHideFlags: 0

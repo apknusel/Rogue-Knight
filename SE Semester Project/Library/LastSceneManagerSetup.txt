@@ -7,3 +7,11 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
+- path: Assets/Scenes/Death Screen.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Start Screen.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0

@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
 
     public int currentHealth;
-    //public Text text;
+    private Text HealthText;
     public int maxHealth = 200;
-    public int damage;
+    public int Damage;
 
     public float speed = 3.0f;
 
@@ -22,23 +23,29 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currentHealth = 100;
-        //text.text = "" + currentHealth.ToString();
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
+        rb.velocity= new Vector2(movement.x*speed,movement.y*speed);
+        
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
         animator.SetFloat("Look X", movement.x);
         animator.SetFloat("Look Y", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-    }
 
-    void FixedUpdate()
-    {
-        rb.velocity= new Vector2(movement.x*speed,movement.y*speed);
+        if (HealthText == null)
+        {
+            HealthText = GameObject.FindWithTag("Text").GetComponent<Text>();
+        }
+
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene(sceneBuildIndex: 2);
+        }
     }
 
     public int health()
@@ -49,7 +56,7 @@ public class PlayerController : MonoBehaviour
     public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
-        //text.text = "" + currentHealth;
+        HealthText.text = "" + currentHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -67,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     public int getDamage()
     {
-        return damage;
+        return Damage;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -75,7 +82,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("enemy"))
         {
             Debug.Log("Damaged!");
-            changeHealth(-5);
+            changeHealth(-1 * collision.gameObject.GetComponent<Monster1Controller>().getDamage());
         }
     }
 }

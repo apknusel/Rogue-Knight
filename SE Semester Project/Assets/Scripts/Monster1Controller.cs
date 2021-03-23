@@ -6,13 +6,14 @@ public class Monster1Controller : MonoBehaviour
 {
     private Animator myAnim;
     private Transform target;
-    public Transform homePos;
+    //public Transform homePos;
     public float speed;
     public float maxRange;
     public float minRange;
     public int currentHealth;
     public int maxHealth;
     public GameObject coin;
+    public int Damage;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class Monster1Controller : MonoBehaviour
         }
         else if (Vector3.Distance(target.position, transform.position) >= maxRange)
         {
-            GoHome();
+            //GoHome();
         }
         if (currentHealth <= 0)
         {
@@ -52,16 +53,21 @@ public class Monster1Controller : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
     }
-
+    /*
     public void GoHome()
     {
-        myAnim.SetFloat("moveX", (homePos.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (homePos.position.y - transform.position.y));
-        transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
+        //myAnim.SetFloat("moveX", (homePos.position.x - transform.position.x));
+        //myAnim.SetFloat("moveY", (homePos.position.y - transform.position.y));
+        //transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
         if (Vector3.Distance(transform.position, homePos.position) == 0)
         {
             myAnim.SetBool("isMoving", false);
         }
+    }*/
+
+    public int getDamage()
+    {
+        return Damage;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

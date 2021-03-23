@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 890307015855401333}
   - component: {fileID: 890307015855401334}
+  - component: {fileID: 8822101319104869364}
   m_Layer: 0
-  m_Name: NextLevel
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,3 +58,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.268374, y: 0.83226967}
   m_EdgeRadius: 0
+--- !u!114 &8822101319104869364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890307015855401288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b961f184523f79e4baff4694376b9699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves: 0
+  totalEnemies: 0
+  enemy: {fileID: 1318255953144265894, guid: 6ff8f13e7f27b2448b4d3aff22505f56, type: 3}
+  player: {fileID: 5398713581901947197, guid: b07c57ddb2089c5419fbfe6722c7b33e, type: 3}
+  spawnWidth: {x: -15, y: 8}
+  spawnLength: {x: -3, y: 8}
+  playerPosition: {x: -2, y: -3}

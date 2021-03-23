@@ -24,21 +24,27 @@ public class LevelManager : MonoBehaviour
 
     public void FixedUpdate()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        enemiesLeft = enemies.Length;
-        if (enemiesLeft == 0)
+        if (waves != 0)
         {
-            totalEnemies -= totalEnemies / waves;
-            waves -= 1;
-            spawnEnemies();
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+            enemiesLeft = enemies.Length;
+            if (enemiesLeft == 0)
+            {
+                totalEnemies -= totalEnemies / waves;
+                waves -= 1;
+                spawnEnemies();
+            }
         }
     }
 
     private void spawnEnemies()
     {
-        for (int i = 0; i < totalEnemies / waves; i++)
+        if (waves != 0)
         {
-            Instantiate(enemy, new Vector3(Random.Range(spawnLength.x, spawnLength.y), Random.Range(spawnWidth.x, spawnWidth.y), 0), transform.rotation);
+            for (int i = 0; i < totalEnemies / waves; i++)
+            {
+                Instantiate(enemy, new Vector3(Random.Range(spawnLength.x, spawnLength.y), Random.Range(spawnWidth.x, spawnWidth.y), 0), transform.rotation);
+            }
         }
     }
 
@@ -48,7 +54,7 @@ public class LevelManager : MonoBehaviour
         entered = 1;
     }
     
-    void Update()
+    public void Update()
     {
         if (entered == 1 && waves == 0)
         {
@@ -57,6 +63,16 @@ public class LevelManager : MonoBehaviour
                 SceneManager.LoadScene(sceneBuildIndex: 1);
             }
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 0);
+    }
+
+    public void Exit()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
     }
     
 }
