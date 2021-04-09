@@ -5,6 +5,9 @@ using UnityEngine;
 public class shootScript : MonoBehaviour
 {
     public Transform Gun;
+    public Transform firePoint;
+    public GameObject bulletPrefab;
+    public float bulletForce = .05f;
 
     Vector2 direction;
     // Start is called before the first frame update
@@ -19,6 +22,10 @@ public class shootScript : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePos - (Vector2)Gun.position;
         FaceMouse();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
     }
 
     void FaceMouse()
@@ -37,5 +44,12 @@ public class shootScript : MonoBehaviour
     public Vector3 getRotation()
     {
         return Gun.transform.right;
+    }
+
+    void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 }

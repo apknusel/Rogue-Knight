@@ -8,6 +8,7 @@ TagManager:
   - Hearts
   - enemy
   - Text
+  - Bullet
   layers:
   - Default
   - TransparentFX

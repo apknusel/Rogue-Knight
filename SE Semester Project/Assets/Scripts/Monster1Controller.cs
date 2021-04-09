@@ -72,7 +72,7 @@ public class Monster1Controller : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             changeHealth(collision.gameObject.GetComponent<PlayerController>().getDamage());
         }
