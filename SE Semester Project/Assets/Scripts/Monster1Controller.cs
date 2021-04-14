@@ -74,7 +74,7 @@ public class Monster1Controller : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            changeHealth(collision.gameObject.GetComponent<PlayerController>().getDamage());
+            changeHealth(10);
         }
     }
 }
