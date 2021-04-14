@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 440b00956c9a64649b2f7841f509c2e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1893910171563683489
+    second: Karabiner 98k_0
+  - first:
+      213: -7938155712172257661
+    second: Karabiner 98k_1
+  - first:
+      213: -1344441356136858085
+    second: Karabiner 98k_2
+  - first:
+      213: -5704273019428890538
+    second: Karabiner 98k_3
+  - first:
+      213: 6558494516273087404
+    second: Karabiner 98k_4
+  - first:
+      213: -4026257595987966569
+    second: Karabiner 98k_5
+  - first:
+      213: 1818870789732332662
+    second: Karabiner 98k_6
+  - first:
+      213: -6025802781498156254
+    second: Karabiner 98k_7
+  - first:
+      213: -156272445533363971
+    second: Karabiner 98k_8
+  - first:
+      213: 2731762091391762769
+    second: Karabiner 98k_9
+  - first:
+      213: -855465894157254076
+    second: Karabiner 98k_10
+  - first:
+      213: -6813844263174881269
+    second: Karabiner 98k_11
+  - first:
+      213: -7710094674468888031
+    second: Karabiner 98k_12
+  - first:
+      213: -4203317854953657339
+    second: Karabiner 98k_13
+  - first:
+      213: -5954887168521181209
+    second: Karabiner 98k_14
+  - first:
+      213: -1662521929665929526
+    second: Karabiner 98k_15
+  - first:
+      213: 4363003989663713175
+    second: Karabiner 98k_16
+  - first:
+      213: 3651016116805345185
+    second: Karabiner 98k_17
+  - first:
+      213: 3661941796852712692
+    second: Karabiner 98k_18
+  - first:
+      213: 1678529292906755248
+    second: Karabiner 98k_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Karabiner 98k_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 612
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae6d844445884a10800000000000000
+      internalID: 1893910171563683489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 580
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e0c3c107106d190800000000000000
+      internalID: -7938155712172257661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 548
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e3e12b5b5975de0800000000000000
+      internalID: -1344441356136858085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 516
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658981f49e956d0b0800000000000000
+      internalID: -5704273019428890538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 484
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca30ecf9304740b50800000000000000
+      internalID: 6558494516273087404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 452
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7954be86c0cdf18c0800000000000000
+      internalID: -4026257595987966569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 420
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6747452b85ded3910800000000000000
+      internalID: 1818870789732332662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 388
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bdd3adb4c006ca0800000000000000
+      internalID: -6025802781498156254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 356
+        width: 107
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df06dcbe90fc4ddf0800000000000000
+      internalID: -156272445533363971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 324
+        width: 100
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151c84c062b29e520800000000000000
+      internalID: 2731762091391762769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 292
+        width: 95
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4428b4d3d46c024f0800000000000000
+      internalID: -855465894157254076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_11
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 260
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00c0a27ebc5071a0800000000000000
+      internalID: -6813844263174881269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 228
+        width: 94
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122a6af4ebd300590800000000000000
+      internalID: -7710094674468888031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 196
+        width: 94
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c2e695ea0daa5c0800000000000000
+      internalID: -4203317854953657339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 164
+        width: 94
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e763caabadfb5da0800000000000000
+      internalID: -5954887168521181209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 132
+        width: 94
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace17f60d198de8e0800000000000000
+      internalID: -1662521929665929526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 100
+        width: 94
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797848d23018c8c30800000000000000
+      internalID: 4363003989663713175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 68
+        width: 94
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af986770d30ba230800000000000000
+      internalID: 3651016116805345185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 36
+        width: 94
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4cf8599a4d1d230800000000000000
+      internalID: 3661941796852712692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karabiner 98k_19
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4
+        width: 94
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b47bc8af755b4710800000000000000
+      internalID: 1678529292906755248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

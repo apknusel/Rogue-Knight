@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
 
+
     public int currentHealth;
     private Text HealthText;
     public int maxHealth = 200;
@@ -28,13 +29,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity= new Vector2(movement.x*speed,movement.y*speed);
+        rb.velocity = new Vector2(movement.x*speed,movement.y*speed);
         
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
+        //flip();
 
-        animator.SetFloat("Look X", movement.x);
-        animator.SetFloat("Look Y", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         if (HealthText == null)
@@ -85,4 +85,15 @@ public class PlayerController : MonoBehaviour
             changeHealth(-1 * collision.gameObject.GetComponent<Monster1Controller>().getDamage());
         }
     }
+    //void flip()
+    //{
+    //    if (gameObject.GetComponent<shootScript>().getRotation().x < 0)
+    //    {
+    //        transform.localRotation = Quaternion.Euler(0, 180, 0);
+    //    }
+    //    else
+    //    {
+    //        transform.localRotation = Quaternion.Euler(0, 0, 0);
+    //    }
+    //}
 }

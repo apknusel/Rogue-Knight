@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: d86eef638a266af469d8fe72022e9828
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5975722262308720661
+    second: Sterling SMG_0
+  - first:
+      213: -2879450021951620188
+    second: Sterling SMG_1
+  - first:
+      213: -2024701163522528208
+    second: Sterling SMG_2
+  - first:
+      213: -2736869844946842864
+    second: Sterling SMG_3
+  - first:
+      213: 6019974181177699381
+    second: Sterling SMG_4
+  - first:
+      213: 3862510911300744832
+    second: Sterling SMG_5
+  - first:
+      213: 4337144473316994962
+    second: Sterling SMG_6
+  - first:
+      213: -900913804469271557
+    second: Sterling SMG_7
+  - first:
+      213: -7278470189929134184
+    second: Sterling SMG_8
+  - first:
+      213: -7636472380015833939
+    second: Sterling SMG_9
+  - first:
+      213: 3221632154518905429
+    second: Sterling SMG_10
+  - first:
+      213: -1760047543117594420
+    second: Sterling SMG_11
+  - first:
+      213: 611466125259463868
+    second: Sterling SMG_12
+  - first:
+      213: -7792213814171792260
+    second: Sterling SMG_13
+  - first:
+      213: -7689302818375572816
+    second: Sterling SMG_14
+  - first:
+      213: 3575141971286662953
+    second: Sterling SMG_15
+  - first:
+      213: 1645621206757377344
+    second: Sterling SMG_16
+  - first:
+      213: 4864784023437135946
+    second: Sterling SMG_17
+  - first:
+      213: -3605017960419369405
+    second: Sterling SMG_18
+  - first:
+      213: -6748394882497011875
+    second: Sterling SMG_19
+  - first:
+      213: 1983936257168958140
+    second: Sterling SMG_20
+  - first:
+      213: -695729968463323865
+    second: Sterling SMG_21
+  - first:
+      213: 3916960611107967757
+    second: Sterling SMG_22
+  - first:
+      213: -721059197724104155
+    second: Sterling SMG_23
+  - first:
+      213: -3267044690623018303
+    second: Sterling SMG_24
+  - first:
+      213: 3358995920227212876
+    second: Sterling SMG_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sterling SMG_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 603
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befe1be5348f11da0800000000000000
+      internalID: -5975722262308720661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 579
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab351506732a08d0800000000000000
+      internalID: -2879450021951620188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 555
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c6be3e401d6e3e0800000000000000
+      internalID: -2024701163522528208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 531
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b0777606fa40ad0800000000000000
+      internalID: -2736869844946842864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 507
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cae126f9e3b8350800000000000000
+      internalID: 6019974181177699381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 483
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086b62995356a9530800000000000000
+      internalID: 3862510911300744832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 459
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fab975be1a03c30800000000000000
+      internalID: 4337144473316994962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 435
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf30d570baf4f73f0800000000000000
+      internalID: -900913804469271557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 411
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897010ddcedadfa90800000000000000
+      internalID: -7278470189929134184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 387
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac031484dcc50690800000000000000
+      internalID: -7636472380015833939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 363
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5526317206985bc20800000000000000
+      internalID: 3221632154518905429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 339
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc04daca51e0397e0800000000000000
+      internalID: -1760047543117594420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 315
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc5644833d5c7800800000000000000
+      internalID: 611466125259463868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 291
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c066822de7cd390800000000000000
+      internalID: -7792213814171792260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 267
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2605c83db1a4590800000000000000
+      internalID: -7689302818375572816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 243
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f91245ea47d9130800000000000000
+      internalID: 3575141971286662953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 219
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0458f97c4cb66d610800000000000000
+      internalID: 1645621206757377344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 195
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4057f96b4f238340800000000000000
+      internalID: 4864784023437135946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 171
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34edc44e34768fdc0800000000000000
+      internalID: -3605017960419369405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 147
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f93b0eb92e852a0800000000000000
+      internalID: -6748394882497011875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 123
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2e299b38b588b10800000000000000
+      internalID: 1983936257168958140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 99
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d5622a7454856f0800000000000000
+      internalID: -695729968463323865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 75
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0399404ce6db5630800000000000000
+      internalID: 3916960611107967757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 51
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a60a1ea784ef5f0800000000000000
+      internalID: -721059197724104155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 27
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac616d92029a2d0800000000000000
+      internalID: -3267044690623018303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling SMG_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 69
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e11232efc8d9e20800000000000000
+      internalID: 3358995920227212876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
