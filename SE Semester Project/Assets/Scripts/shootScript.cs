@@ -8,6 +8,8 @@ public class shootScript : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = .05f;
+    public float fireRate;
+    private float nextFire = 0f;
 
     Vector2 direction;
     // Start is called before the first frame update
@@ -22,8 +24,9 @@ public class shootScript : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePos - (Vector2)Gun.position;
         FaceMouse();
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
+            nextFire = Time.time + fireRate;
             Shoot();
         }
     }
@@ -52,4 +55,6 @@ public class shootScript : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
+    
 }
+

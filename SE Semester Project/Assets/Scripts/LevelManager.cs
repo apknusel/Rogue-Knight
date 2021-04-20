@@ -16,14 +16,19 @@ public class LevelManager : MonoBehaviour
     private int enemiesLeft;
     private int entered = 0;
 
-    public void Awake()
+    public void start()
     {
+        DontDestroyOnLoad(this);
         Instantiate(player, new Vector3(playerPosition.x,playerPosition.y,0),transform.rotation);
         spawnEnemies();
     }
 
     public void FixedUpdate()
     {
+        if (!GameObject.FindGameObjectWithTag("Player"))
+        {
+            Instantiate(player, new Vector3(playerPosition.x, playerPosition.y, 0), transform.rotation);
+        }
         if (waves != 0)
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
@@ -60,14 +65,14 @@ public class LevelManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(sceneBuildIndex: 1);
+                SceneManager.LoadScene(sceneBuildIndex: 2);
             }
         }
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 0);
+        SceneManager.LoadScene(sceneBuildIndex: 1);
     }
 
     public void Exit()

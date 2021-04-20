@@ -12,6 +12,7 @@ public class CoinManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this);
         if (instance == null)
         {
             instance = this;

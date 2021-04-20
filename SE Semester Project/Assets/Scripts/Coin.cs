@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public int coinValue = 1;
+    public int coinValue;
     Rigidbody2D rb;
     private int timer = 500;
 

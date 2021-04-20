@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         vcam = GetComponent<CinemachineVirtualCamera>();
+        DontDestroyOnLoad(this);
     }
 
     void Update()
