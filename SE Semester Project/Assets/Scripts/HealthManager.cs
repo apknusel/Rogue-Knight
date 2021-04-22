@@ -14,10 +14,22 @@ public class HealthManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
+        
+    }
+
+    void Update()
+    {
         if (instance == null)
         {
             instance = this;
-            ChangeHealth(player.GetComponent<PlayerController>().health());
+            if (player != null)
+            {
+                ChangeHealth(player.GetComponent<PlayerController>().health());
+            }
+        }
+        if (player == null)
+        {
+            GameObject.FindGameObjectWithTag("Player");
         }
     }
 

@@ -16,19 +16,32 @@ public class LevelManager : MonoBehaviour
     private int enemiesLeft;
     private int entered = 0;
 
-    public void start()
+    void Start()
     {
         DontDestroyOnLoad(this);
-        Instantiate(player, new Vector3(playerPosition.x,playerPosition.y,0),transform.rotation);
-        spawnEnemies();
+        
     }
+
+    private int spawn = 1;
+    private int level = 4;
+    private int level2 = 4;
 
     public void FixedUpdate()
     {
-        if (!GameObject.FindGameObjectWithTag("Player"))
+        Debug.Log(spawn + " " + level + " " + level2);
+        if (spawn == 0)
         {
             Instantiate(player, new Vector3(playerPosition.x, playerPosition.y, 0), transform.rotation);
+            spawnEnemies();
+            spawn = 1;
         }
+        level = SceneManager.GetActiveScene().buildIndex;
+        if (level != level2 && level != 0 && level != 4)
+        {
+            spawn = 0;
+            level2 = level;
+        }
+        
         if (waves != 0)
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");

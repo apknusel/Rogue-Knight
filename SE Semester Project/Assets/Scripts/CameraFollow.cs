@@ -20,7 +20,10 @@ public class CameraFollow : MonoBehaviour
         {
             player = GameObject.FindWithTag("Player");
         }
-        vcam.LookAt = player.transform;
-        vcam.Follow = player.transform;
+        if (player != null)
+        {
+            vcam.LookAt = player.transform;
+            vcam.Follow = player.transform;
+        }
     }
 }
