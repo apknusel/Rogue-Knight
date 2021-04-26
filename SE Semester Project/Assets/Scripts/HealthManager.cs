@@ -38,4 +38,14 @@ public class HealthManager : MonoBehaviour
         health += amount;
         text.text = "" + health.ToString();
     }
+
+    public void setText(Text newText)
+    {
+        text = newText;
+    }
+    
+    public void setPlayer(GameObject newPlayer)
+    {
+        player = newPlayer;
+    }
 }

@@ -74,6 +74,6 @@ MonoBehaviour:
   totalEnemies: 0
   enemy: {fileID: 1318255953144265894, guid: 6ff8f13e7f27b2448b4d3aff22505f56, type: 3}
   player: {fileID: 5398713581901947197, guid: b07c57ddb2089c5419fbfe6722c7b33e, type: 3}
-  spawnWidth: {x: -15, y: 8}
-  spawnLength: {x: -3, y: 8}
-  playerPosition: {x: -2, y: -3}
+  spawnWidth: {x: 11, y: 11}
+  spawnLength: {x: 2, y: 11}
+  playerPosition: {x: 0, y: 0}

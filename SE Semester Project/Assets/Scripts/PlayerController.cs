@@ -8,9 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
 
-
+    public Text HealthText;
     public int currentHealth;
-    private Text HealthText;
     public int maxHealth = 200;
     public int Damage;
 
@@ -33,13 +32,12 @@ public class PlayerController : MonoBehaviour
         
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
-        //flip();
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         if (HealthText == null)
         {
-            HealthText = GameObject.FindWithTag("Text").GetComponent<Text>();
+            HealthText = GameObject.Find("Health Text").GetComponent<Text>();
         }
 
         if (currentHealth <= 0)
@@ -81,7 +79,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
-            Debug.Log("Damaged!");
             changeHealth(-1 * collision.gameObject.GetComponent<Monster1Controller>().getDamage());
         }
     }

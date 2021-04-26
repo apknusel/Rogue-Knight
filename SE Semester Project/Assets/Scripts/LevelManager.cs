@@ -28,7 +28,6 @@ public class LevelManager : MonoBehaviour
 
     public void FixedUpdate()
     {
-        Debug.Log(spawn + " " + level + " " + level2);
         if (spawn == 0)
         {
             Instantiate(player, new Vector3(playerPosition.x, playerPosition.y, 0), transform.rotation);
@@ -36,7 +35,7 @@ public class LevelManager : MonoBehaviour
             spawn = 1;
         }
         level = SceneManager.GetActiveScene().buildIndex;
-        if (level != level2 && level != 0 && level != 4)
+        if (level != level2 && level != 0 && level != 4 && level != 5)
         {
             spawn = 0;
             level2 = level;
@@ -91,5 +90,15 @@ public class LevelManager : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void setWaves(int num)
+    {
+        waves = num;
+    }
+
+    public void setEnemies(int num)
+    {
+        totalEnemies = num;
     }
 }
