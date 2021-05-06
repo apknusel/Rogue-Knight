@@ -29,4 +29,9 @@ public class CoinManager : MonoBehaviour
     {
         text = newText;
     }
+
+    public int getScore()
+    {
+        return score;
+    }
 }

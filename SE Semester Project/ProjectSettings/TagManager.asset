@@ -9,6 +9,10 @@ TagManager:
   - enemy
   - Text
   - Bullet
+  - firerate
+  - speed
+  - health
+  - damage
   layers:
   - Default
   - TransparentFX

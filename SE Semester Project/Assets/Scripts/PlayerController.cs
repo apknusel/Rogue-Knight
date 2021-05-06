@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public Text HealthText;
     public int currentHealth;
     public int maxHealth = 200;
-    public int Damage;
+    public float Damage;
 
     public float speed = 3.0f;
 
@@ -68,9 +68,26 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             changeHealth(10);
         }
+        if (other.gameObject.CompareTag("firerate"))
+        {
+            GetComponent<shootScript>().firerateUpgrade();
+        }
+        if (other.gameObject.CompareTag("speed"))
+        {
+            speed *= 1.05f;
+        }
+        if (other.gameObject.CompareTag("damage"))
+        {
+            Damage *= 1.05f;
+        }
+        if (other.gameObject.CompareTag("health"))
+        {
+            maxHealth += 10;
+            currentHealth += 10;
+        }
     }
 
-    public int getDamage()
+    public float getDamage()
     {
         return Damage;
     }
@@ -82,15 +99,4 @@ public class PlayerController : MonoBehaviour
             changeHealth(-1 * collision.gameObject.GetComponent<Monster1Controller>().getDamage());
         }
     }
-    //void flip()
-    //{
-    //    if (gameObject.GetComponent<shootScript>().getRotation().x < 0)
-    //    {
-    //        transform.localRotation = Quaternion.Euler(0, 180, 0);
-    //    }
-    //    else
-    //    {
-    //        transform.localRotation = Quaternion.Euler(0, 0, 0);
-    //    }
-    //}
 }

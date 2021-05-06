@@ -56,5 +56,9 @@ public class shootScript : MonoBehaviour
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
     
+    public void firerateUpgrade()
+    {
+        fireRate *= 1.05f;
+    }
 }
 
