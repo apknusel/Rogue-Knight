@@ -118,12 +118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  maxRange: 20
-  minRange: 0
-  currentHealth: 60
-  maxHealth: 60
+  currentHealth: 50
+  maxHealth: 50
   coin: {fileID: 2406998225864962747, guid: 29e38a06863da3048aeec9d859fa5fa7, type: 3}
-  Damage: 10
+  Damage: 5
 --- !u!61 &3397848371442338376
 BoxCollider2D:
   m_ObjectHideFlags: 0

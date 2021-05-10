@@ -6,10 +6,7 @@ public class Monster2Controller : MonoBehaviour
 {
     private Animator myAnim;
     private Transform target;
-    //public Transform homePos;
     public float speed;
-    public float maxRange;
-    public float minRange;
     public int currentHealth;
     public int maxHealth;
     public GameObject coin;
@@ -26,14 +23,8 @@ public class Monster2Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
-        {
-            FollowPlayer();
-        }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            //GoHome();
-        }
+        FollowPlayer();
+
         if (currentHealth <= 0)
         {
             Instantiate(coin, transform.position, transform.rotation);
@@ -53,17 +44,6 @@ public class Monster2Controller : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
     }
-    /*
-    public void GoHome()
-    {
-        //myAnim.SetFloat("moveX", (homePos.position.x - transform.position.x));
-        //myAnim.SetFloat("moveY", (homePos.position.y - transform.position.y));
-        //transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, homePos.position) == 0)
-        {
-            myAnim.SetBool("isMoving", false);
-        }
-    }*/
 
     public int getDamage()
     {
@@ -74,7 +54,7 @@ public class Monster2Controller : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            changeHealth(10);
+            changeHealth(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().getDamage());
         }
     }
 }

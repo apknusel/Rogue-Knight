@@ -8,13 +8,13 @@ public class LevelManager : MonoBehaviour
     public int waves;
     public int totalEnemies;
     public GameObject enemy;
+    public GameObject enemy2;
     public GameObject player;
     public Vector2 spawnWidth;
     public Vector2 spawnLength;
     public Vector2 playerPosition;
 
     private int enemiesLeft;
-    private int entered = 0;
 
     void Start()
     {
@@ -23,8 +23,8 @@ public class LevelManager : MonoBehaviour
     }
 
     private int spawn = 1;
-    private int level = 4;
-    private int level2 = 4;
+    private int level = 2;
+    private int level2 = 2;
 
     public void FixedUpdate()
     {
@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
             spawn = 1;
         }
         level = SceneManager.GetActiveScene().buildIndex;
-        if (level != level2 && level != 0 && level != 4 && level != 5)
+        if (level != level2 && level > 2)
         {
             spawn = 0;
             level2 = level;
@@ -60,31 +60,37 @@ public class LevelManager : MonoBehaviour
         {
             for (int i = 0; i < totalEnemies / waves; i++)
             {
-                Instantiate(enemy, new Vector3(Random.Range(spawnLength.x, spawnLength.y), Random.Range(spawnWidth.x, spawnWidth.y), 0), transform.rotation);
+                int num = Random.Range(1, 3);
+                if (num == 1)
+                {
+                    Instantiate(enemy, new Vector3(Random.Range(spawnLength.x, spawnLength.y), Random.Range(spawnWidth.x, spawnWidth.y), 0), transform.rotation);
+                }
+                if (num == 2)
+                {
+                    Instantiate(enemy2, new Vector3(Random.Range(spawnLength.x, spawnLength.y), Random.Range(spawnWidth.x, spawnWidth.y), 0), transform.rotation);
+                }
             }
         }
     }
-
-
-    public void OnTriggerEnter2D(Collider2D Player)
-    {
-        entered = 1;
-    }
-    
     public void Update()
     {
-        if (entered == 1 && waves == 0)
+        if ( waves == 0)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(sceneBuildIndex: 2);
+                int num = Random.Range(5, 7);
+                SceneManager.LoadScene(sceneBuildIndex: num);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(sceneBuildIndex: 4);
             }
         }
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 1);
+        SceneManager.LoadScene(sceneBuildIndex: 3);
     }
 
     public void Exit()
@@ -100,5 +106,15 @@ public class LevelManager : MonoBehaviour
     public void setEnemies(int num)
     {
         totalEnemies = num;
+    }
+
+    public void setWidth(Vector2 w)
+    {
+        spawnWidth = w;
+    }
+
+    public void setLength(Vector2 L)
+    {
+        spawnLength = L;
     }
 }

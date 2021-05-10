@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public Text HealthText;
     public int currentHealth;
     public int maxHealth = 200;
-    public float Damage;
+    public int Damage;
 
     public float speed = 3.0f;
 
@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentHealth = 100;
+        currentHealth = maxHealth;
+        HealthText.text = "" + currentHealth;
         animator = GetComponent<Animator>();
     }
 
@@ -78,7 +79,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("damage"))
         {
-            Damage *= 1.05f;
+            Damage += 5;
         }
         if (other.gameObject.CompareTag("health"))
         {
@@ -87,7 +88,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public float getDamage()
+    public int getDamage()
     {
         return Damage;
     }

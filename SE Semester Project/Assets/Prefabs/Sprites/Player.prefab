@@ -126,9 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255f76c813a87f54da537d20c8062baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HealthText: {fileID: 0}
   currentHealth: 100
   maxHealth: 100
-  Damage: 20
+  Damage: 15
   speed: 5.5
   animator: {fileID: 5398713581901947138}
 --- !u!95 &5398713581901947138
