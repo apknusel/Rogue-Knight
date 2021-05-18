@@ -34,12 +34,14 @@ public class shootScript : MonoBehaviour
     void FaceMouse()
     {
         Gun.transform.right = direction;
-        if (Gun.transform.right.x < 0)
+        if (Gun.transform.right.x <= 0)
         {
+            Gun.GetComponent<SpriteRenderer>().flipY = true;
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         else
         {
+            Gun.GetComponent<SpriteRenderer>().flipY = false;
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }

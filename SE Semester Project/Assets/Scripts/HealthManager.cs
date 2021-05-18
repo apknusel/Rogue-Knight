@@ -14,29 +14,18 @@ public class HealthManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-        
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (instance == null)
-        {
-            instance = this;
-            if (player != null)
-            {
-                ChangeHealth(player.GetComponent<PlayerController>().health());
-            }
-        }
-        if (player == null)
-        {
-            GameObject.FindGameObjectWithTag("Player");
-        }
+        health = player.GetComponent<PlayerController>().health();
+        text.text = "" + health.ToString();
     }
 
     public void ChangeHealth(int amount)
     {
         health += amount;
-        text.text = "" + health.ToString();
+        Debug.Log("change");
     }
 
     public void setText(Text newText)

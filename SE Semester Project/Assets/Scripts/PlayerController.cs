@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     public Text HealthText;
-    public int currentHealth;
-    public int maxHealth = 200;
+    public int currentHealth = 0;
+    public int maxHealth = 100;
     public int Damage;
 
     public float speed = 3.0f;
@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
     public void changeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
-        HealthText.text = "" + currentHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -84,7 +83,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("health"))
         {
             maxHealth += 10;
-            currentHealth += 10;
+            currentHealth += 50;
         }
     }
 
@@ -98,6 +97,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("enemy"))
         {
             changeHealth(-1 * collision.gameObject.GetComponent<Monster1Controller>().getDamage());
+        }
+        if (collision.gameObject.CompareTag("enemy2"))
+        {
+            changeHealth(-1 * collision.gameObject.GetComponent<Monster2Controller>().getDamage());
         }
     }
 }

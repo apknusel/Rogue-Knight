@@ -44,7 +44,8 @@ public class LevelManager : MonoBehaviour
         if (waves != 0)
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-            enemiesLeft = enemies.Length;
+            GameObject[] enemies2 = GameObject.FindGameObjectsWithTag("enemy2");
+            enemiesLeft = enemies.Length + enemies2.Length;
             if (enemiesLeft == 0)
             {
                 totalEnemies -= totalEnemies / waves;

@@ -28,14 +28,14 @@ public class SetInstances : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TotalEnemies = Random.Range(3, 22);
+        TotalEnemies = Random.Range(5, 22);
         if (SceneManager.GetActiveScene().buildIndex <= 4)
         {
             Waves = 0;
         }
         else
         {
-            Waves = Random.Range(1, 6);
+            Waves = Random.Range(2, 6);
         }
         CoinText = GameObject.Find("Coin Text").GetComponent<Text>();
         HealthText = GameObject.Find("Health Text").GetComponent<Text>();

@@ -13,6 +13,7 @@ TagManager:
   - speed
   - health
   - damage
+  - enemy2
   layers:
   - Default
   - TransparentFX
