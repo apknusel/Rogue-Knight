@@ -7,19 +7,13 @@ public class HealthManager : MonoBehaviour
 {
     public static HealthManager instance;
     public Text text;
-    int health;
+    float health;
     public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this);
-    }
-
-    void FixedUpdate()
-    {
-        health = player.GetComponent<PlayerController>().health();
-        text.text = "" + health.ToString();
     }
 
     public void ChangeHealth(int amount)

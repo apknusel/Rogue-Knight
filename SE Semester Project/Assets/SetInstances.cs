@@ -49,6 +49,8 @@ public class SetInstances : MonoBehaviour
     {
         if (ran == 0)
         {
+            Player.GetComponent<PlayerController>().setLevelManager(LevelManager);
+            Player.GetComponent<PlayerController>().setText(HealthText);
             Level.setWaves(Waves);
             Level.setEnemies(TotalEnemies);
             Level.setWidth(Width);

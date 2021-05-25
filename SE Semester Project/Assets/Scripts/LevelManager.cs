@@ -25,6 +25,7 @@ public class LevelManager : MonoBehaviour
     private int spawn = 1;
     private int level = 2;
     private int level2 = 2;
+    public float[] stats;
 
     public void FixedUpdate()
     {
@@ -75,18 +76,29 @@ public class LevelManager : MonoBehaviour
     }
     public void Update()
     {
+        
         if ( waves == 0)
         {
+            
             if (Input.GetKeyDown(KeyCode.E))
             {
                 int num = Random.Range(5, 7);
+                stats = player.GetComponent<PlayerController>().getStats();
+                Debug.Log(stats[1] + " "+ stats[2]);
                 SceneManager.LoadScene(sceneBuildIndex: num);
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
+                stats = player.GetComponent<PlayerController>().getStats();
+                Debug.Log(stats);
                 SceneManager.LoadScene(sceneBuildIndex: 4);
             }
         }
+    }
+
+    public float[] getStats()
+    {
+        return stats;
     }
 
     public void Restart()

@@ -9,21 +9,32 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     public Text HealthText;
-    public int currentHealth = 0;
-    public int maxHealth = 100;
-    public int Damage;
-
-    public float speed = 3.0f;
+    public float currentHealth = 100;
+    public float maxHealth = 100;
+    public float Damage;
+    public float[] NewStats;
+    public float speed;
 
     public Animator animator;
 
     Vector2 movement;
 
-    void Start()
+    GameObject LevelManager;
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
-        HealthText.text = "" + currentHealth;
+    }
+
+
+    void Start()
+    {
+        NewStats = LevelManager.GetComponent<LevelManager>().getStats();
+        if (NewStats != null)
+        {
+            setStats(NewStats);
+        }
+        Debug.Log(NewStats);
+        HealthText.text = ""+100;
         animator = GetComponent<Animator>();
     }
 
@@ -36,25 +47,26 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (HealthText == null)
-        {
-            HealthText = GameObject.Find("Health Text").GetComponent<Text>();
-        }
-
         if (currentHealth <= 0)
         {
             SceneManager.LoadScene(sceneBuildIndex: 2);
         }
     }
 
-    public int health()
+    public void setText(Text t)
+    {
+        HealthText = t;
+    }
+
+    public float health()
     {
         return currentHealth;
     }
 
-    public void changeHealth(int amount)
+    public void changeHealth(float amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0 , maxHealth);
+        HealthText.text = "" + currentHealth;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -87,7 +99,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public int getDamage()
+    public float getDamage()
     {
         return Damage;
     }
@@ -102,5 +114,25 @@ public class PlayerController : MonoBehaviour
         {
             changeHealth(-1 * collision.gameObject.GetComponent<Monster2Controller>().getDamage());
         }
+    }
+
+    public float[] getStats()
+    {
+        float[] stats = { currentHealth, maxHealth, Damage, speed };
+        Debug.Log(stats[1]+" " +stats[2]);
+        return stats;
+    }
+
+    public void setStats(float[] stats)
+    {
+        currentHealth = stats[0];
+        maxHealth = stats[1];
+        Damage = stats[2];
+        speed = stats[3];
+    }
+
+    public void setLevelManager(GameObject obj)
+    {
+        LevelManager = obj;
     }
 }

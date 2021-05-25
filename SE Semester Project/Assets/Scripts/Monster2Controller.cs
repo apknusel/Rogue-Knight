@@ -7,10 +7,10 @@ public class Monster2Controller : MonoBehaviour
     private Animator myAnim;
     private Transform target;
     public float speed;
-    public int currentHealth;
-    public int maxHealth;
+    public float currentHealth;
+    public float maxHealth;
     public GameObject coin;
-    public int Damage;
+    public float Damage;
 
     // Start is called before the first frame update
     void Start()
@@ -40,12 +40,12 @@ public class Monster2Controller : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
-    public void changeHealth(int amount)
+    public void changeHealth(float amount)
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0, maxHealth);
     }
 
-    public int getDamage()
+    public float getDamage()
     {
         return Damage;
     }
