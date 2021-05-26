@@ -9,6 +9,8 @@
 
   <p align="center">
     Software Engineering Semester Project
+  </p>
+  <p align="center">
     Alex Knusel and Demetri Papageorge
   </p>
 </p>
