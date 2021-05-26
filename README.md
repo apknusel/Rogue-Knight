@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/apknusel/SE-Semester-Project">
-    <img src="https://i.gyazo.com/c161328cc6d22a308504e189f5a60d1e.png" alt="Logo" width="80" height="160">
+    <img src="https://i.gyazo.com/c161328cc6d22a308504e189f5a60d1e.png" alt="Logo" width="80" height="140">
   </a>
 
   <h3 align="center">Roguelite Dungeon</h3>
