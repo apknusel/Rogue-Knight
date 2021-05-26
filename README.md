@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://i.gyazo.com/a5a3758d998356b8ab1e5696e207c0b9.png)
+[![Product Name Screen Shot][https://i.gyazo.com/a5a3758d998356b8ab1e5696e207c0b9.png]](https://i.gyazo.com/a5a3758d998356b8ab1e5696e207c0b9.png)
 
 This project was created for our senior year of highschool at Naperville Central High School for our Software Engineering class. This project took a total of about 4 months of daily work.
 
